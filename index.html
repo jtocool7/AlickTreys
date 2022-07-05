@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+  
+  *{
+    margin:0px;
+    font-family:roboto;
+    user-select:none;
+  }
+  
+  body {
+    background:#efeff1;
+  }
+  
+  #hero{
+    background:#efeff1;
+    width:100%;
+    min-height:100%;
+    max-height:auto;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    overflow:auto;
+  }
+  
+  #header{
+    width:100%;
+    height:15rem;
+    background:#9BC4BC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:5%;
+  }
+  
+  #headertxt {
+    color:#9BC4BC;
+    font-size:2rem;
+    position:absolute;
+    text-align:center;
+  }
+  
+  #pic{
+    width:100%;
+    height:100%;
+    position:relative;
+  }
+  
+  #imgheader{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position:relative;
+  }
+  
+  #testemonial{
+    position:absolute;
+    top:40%;
+    text-align:center;
+    width:20rem;
+    
+  }
+  
+  #tesimg{
+    width:7.5rem;
+    border-radius:5rem;
+    margin-bottom:-15%;
+  }
+  
+  #testxt{
+    background:#8DDBE0;
+    padding:15%;
+    border-radius:1rem;
+    top:70%;
+    z-index:0;
+    color:#090909;
+  }
+  
+  #goal{
+    position:absolute;
+    top:85%;
+    font-size:1.5rem;
+    text-align:center;
+  }
+  
+  #screen1{
+    background:#efeff1;
+    width:100%;
+    min-height:100%;
+    max-height:auto;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    overflow:auto;
+  }
+  
+  .hide {
+    display:none;
+  }
+  
+  #continue{
+    position:absolute;
+    text-align:center;
+    top: 100%;
+    background:#8DDBE0;
+    width:15rem;
+    padding:10%;
+    margin-bottom:5rem;
+    font-size:1.2rem;
+    border-radius:1rem;
+    
+  }
+  
+  #button{
+    background:#9BC4BC;
+    width:100%;
+    height:5rem;
+    border-radius:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  #switch{
+    margin-bottom:5%;
+  }
+  
+  #videos{
+    position:absolute;
+    top:30%;
+    width:90%;
+  }
+  
+  #testt{
+    font-size:1.5rem;
+    position:absolute;
+    top:15%;
+  }
+  
+  #sc2{
+    position:absolute;
+        background:#efeff1;
+    width:100%;
+    min-height:100%;
+    max-height:auto;
+    position:absolute;
+    display:none;
+    justify-content:center;
+    overflow:auto;
+    text-align:center
+    
+  }
+  
+  </style>
+</head>
+<body>
+<div id="hero">
+<div id="screen1">
+<div id="header">
+<div id="pic">
+<img src="https://raw.githubusercontent.com/jtocool7/AlickTreys/main/ricksomething.png" id="imgheader">
+</div>
+<p id="headertxt">
+Alick Treys Insurrance Agency
+</p>
+</div>
+<div id="testemonial">
+<img id="tesimg" src="https://raw.githubusercontent.com/jtocool7/AlickTreys/main/useravatar.avif">
+<div id="testxt">
+<p>
+"Alick Treys Helped Me Save My Home When Geico Wouldn't. They Really Do make you Feel Like you Matter."
+</p> 
+</div>
+</div>
+<p id="goal">
+At Alick Treys, Our Goal Is To Make Sure You Are Always First Because You Matter
+</p>
+<div id="continue">
+<p id="switch">
+Switch To Alick Treys Now
+</p>
+<div id="button">
+<p>
+Continue
+</p>
+</div>
+</div>
+</div>
+<div id="sc2">
+<p id="testt">
+Please Click The Video To Start The Orientation Process.
+</p>
+<video id="videos" src='https://cdn.glitch.global/531028e2-62bd-400b-a323-51dbbd2f2ff2/Y2Mate.is%20-%20Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up%20(Official%20Music%20Video)-dQw4w9WgXcQ-480p-1645018701878%20(2).mp4?v=1657043633971'></video>
+</div>
+</div>
+<script>
+const button = document.getElementById("button")
+const sc = document.getElementById("screen1")
+const sc2 = document.getElementById("sc2")
+button.addEventListener("click", function(){
+sc.style.display = "none"
+sc2.style.display = "flex"
+})
+
+videos.addEventListener("click", function(){
+videos.play()
+})
+</script>
+</body>
+</html>
